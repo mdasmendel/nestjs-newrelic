@@ -1,0 +1,10 @@
+{
+  "name": "nestjs-newrelic",
+  "version": "0.0.1",
+  "description": "NestJS newrelic library",
+  "main": "dist/index.js",
+  "repository": "https://github.com/mdasmendel/nestjs-newrelic.git",
+  "author": "Mihai Dascal <mdasmendel@yahoo.com>",
+  "license": "MIT",
+  "private": false
+}
