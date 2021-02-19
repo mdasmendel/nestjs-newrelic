@@ -1,6 +1,6 @@
 {
   "name": "nestjs-newrelic",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "NestJS newrelic library",
   "main": "dist/index.js",
   "repository": "https://github.com/mdasmendel/nestjs-newrelic.git",
