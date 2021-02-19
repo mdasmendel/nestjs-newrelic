@@ -1,17 +1,18 @@
-# nestjs-elastic
+# nestjs-newrelic
 [NestJS](https://github.com/nestjs/nest) Newrelic APM library.
 
 ## Installation
 ```shell script
-npm i nestjs-elastic --save
+npm i nestjs-newrelic --save
 ```
 or
 ```shell script
-yarn add nestjs-elastic
+yarn add nestjs-newrelic
 ```
 
 ## Usage
 ```typescript
+import newrelic = require('newrelic'); // required by newrelic
 import { ApmErrorInterceptor, ApmHttpInterceptor } from 'nestjs-newrelic';
 import { NestFactory } from '@nestjs/core';
 
@@ -35,7 +36,6 @@ As NestJS is not allowing you to use some sort of `ConfigService` there you need
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ApmModule } from 'elastic-apm-nest';
 
 @Module({
   imports: [
@@ -64,6 +64,6 @@ It won't set UserContext in transaction if `httpUserMapFunction` is not provided
 This method is starting the web transaction and ends it once response is being send.
 
 ### ToDo
-- [] Inject current transaction via decorator
-- [] Add tests
+- [ ] Inject current transaction via decorator
+- [ ] Add tests
 
