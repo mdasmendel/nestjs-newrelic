@@ -9,7 +9,9 @@
     "watch": "tsc -w",
     "prepublishOnly": "yarn clean && tsc",
     "format": "prettier --write \"lib/*.{js,ts}\" \"lib/**/*.{js,ts}\" ",
-    "lint": "prettier --check \"src/**/*.{js,ts}\""
+    "lint": "prettier --check \"src/**/*.{js,ts}\"",
+    "test": "jest",
+    "test:cov": "jest --coverage"
   },
   "author": "Mihai Dascal <mdasmendel@yahoo.com>",
   "license": "MIT",

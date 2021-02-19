@@ -39,6 +39,7 @@ export class ApmModule {
         return {
             exports: [
                 ApmService,
+                ApmHttpInterceptor,
                 APM_OPTIONS,
             ],
             module: ApmModule,
